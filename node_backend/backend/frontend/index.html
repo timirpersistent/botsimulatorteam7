@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charSet="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Signup Form</title>
+  <link rel="stylesheet" href="style.css?v-1.0">
+</head>
+<body data-new-gr-c-s-check-loaded="14.1235.0" data-gr-ext-installed="" cz-shortcut-listen="true">
+  <div class="main-form">
+  <a href="https://woodbridgewines.com" class="brand-image flex items-center w-full" aria-label="Woodbridge wines"><img src="https://cdn.shopify.com/s/files/1/0595/7373/1528/files/High_Res_PNG-Woodbridge_Black_Horizontal_Logo.png?v=1737052040" alt="Woodbridge wines Logo" class="my-0 mx-auto h-auto w-[100px] md:w-[150px] lg:w-[200px]"></a>
+  <div class="">
+  <h2 class="heading">LET’S GET STARTED!</h2>
+  <p class="font-w-600">PLEASE ENTER YOUR EMAIL ADDRESS BELOW AND WE WILL SEND YOU A ONE-TIME EMAIL CONFIRMATION TO START.</p>
+
+  <form action="http://localhost:3987/submit" method="POST" id="signup-form">
+    <div class="">
+      <label for="email" class="text-sm">Enter your email address below and click the arrow.</label>
+      <div class="form-fields ">
+        <input class="email-field" type="email" id="email" placeholder="Enter Email" autofocus="" aria-labelledby="custom-error" name="email">
+        <button class="submit-btn" type="submit" aria-label="Submit">&gt;</button>
+      </div>
+      <!-- Cloudflare Turnstile CAPTCHA widget (test sitekey) -->
+      <div class="cf-turnstile" data-sitekey="1x00000000000000000000AA"></div>
+      <!-- Hidden input for bypass in automation (filled by bot) -->
+      <input type="hidden" name="cf-turnstile-response" />
+    </div>
+  </form>
+  </div>
+  </div>
+    <p class="text-sm">If your email address has been previously validated for another Constellation Brands promotion, you may not receive an email in connection with this promotion.</p>
+
+</body>
+</html>
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
